@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ======================================================================
+     FAHAD IQBAL — PORTFOLIO · index.html
+     One-page homepage. 13 anchored sections + footer (§6, §7).
+
+     BUILD STATE: <body data-build="dev"> shows clearly-marked placeholder
+     slots for review. Change to data-build="launch" before publishing to
+     hide everything still unfilled (§5.16, §14.1, §30).
+
+     PLACEHOLDERS STILL OPEN (never invent — see README register):
+       01 domain · 02 Formspree ID · 03 resume PDF · 04 LinkedIn URL
+       05 GitHub repos · 06 projects 2–5 · 07 creative gallery · 08 OG image
+       09 project 1 "to be documented" fields · 10 optional CGPA line
+     ====================================================================== -->
+
+<title>Fahad Iqbal — Full-Stack Developer · Cybersecurity · AI Engineering · Creative Technology</title>
+<meta name="description" content="Fahad Iqbal — full-stack developer and cybersecurity student. Selected work across software, security, AI, automation, and creative technology.">
+<meta name="author" content="Fahad Iqbal">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FAFAF7">
+
+<!-- PLACEHOLDER-01: replace https://YOUR-DOMAIN with the real domain once owned.
+     Until then this is a marker, not a live URL. -->
+<link rel="canonical" href="https://YOUR-DOMAIN/">
+
+<!-- Open Graph / Twitter (§22) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fahad Iqbal">
+<meta property="og:title" content="Engineer who designs. — Fahad Iqbal">
+<meta property="og:description" content="Fahad Iqbal — full-stack developer and cybersecurity student. Selected work across software, security, AI, automation, and creative technology.">
+<meta property="og:url" content="https://YOUR-DOMAIN/">
+<!-- PLACEHOLDER-08: og-image.png is a pre-launch draft. Re-export once the
+     domain is set (spec: 1200×630, canvas #FAFAF7, thin vermilion rule,
+     "Engineer who designs." in Fraunces with vermilion period). -->
+<meta property="og:image" content="https://YOUR-DOMAIN/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Engineer who designs. — Fahad Iqbal, Full-Stack Developer · Cybersecurity · Creative Technology">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Engineer who designs. — Fahad Iqbal">
+<meta name="twitter:description" content="Fahad Iqbal — full-stack developer and cybersecurity student. Selected work across software, security, AI, automation, and creative technology.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN/assets/images/og-image.png">
+
+<!-- Security (§24). No inline scripts, no third-party origins except the
+     form endpoint. connect-src is required because the form submits via fetch. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self' 'sha256-pvq7WuGMFRZ6kdvc1REfUksYh6eDsTHeUI8V9LMPaZ8='; font-src 'self'; form-action https://formspree.io; connect-src https://formspree.io; base-uri 'self'; frame-ancestors 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Icons -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Self-hosted fonts (§10, §23): two variable woff2 files, preloaded, swap -->
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+
+<!-- Structured data (§22): Person, country only — no city (§2) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Fahad Iqbal",
+  "jobTitle": "Full-Stack Developer · Cybersecurity · AI Engineering · Creative Technology",
+  "description": "Full-stack developer and cybersecurity student. Selected work across software, security, AI, automation, and creative technology.",
+  "email": "mailto:fahadiqbal.1507@gmail.com",
+  "url": "https://YOUR-DOMAIN/",
+  "sameAs": [
+    "https://github.com/fahadiqbal-z"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "PK"
+  },
+  "knowsAbout": [
+    "Cybersecurity",
+    "Full-Stack Web Development",
+    "Full-Stack Application Development",
+    "Graphic Design",
+    "VFX",
+    "Motion Graphics",
+    "Video Editing",
+    "Color Grading",
+    "Illustration",
+    "Python",
+    "C++",
+    "JavaScript",
+    "Linux",
+    "Kali Linux",
+    "Prompt Engineering",
+    "AI Engineering",
+    "AI Automation"
+  ]
+}
+</script>
+<!-- PLACEHOLDER-04: add "https://www.linkedin.com/in/fahadiqbal-z" to sameAs
+     ONLY after the URL is verified. Unverified → leave LinkedIn out entirely. -->
+</head>
+
+<body class="no-js" data-build="dev">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER (shared chrome) ========================= -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="wordmark" href="#hero" aria-label="Fahad Iqbal — home">
+      <span class="mono" aria-hidden="true">FI<span class="dot">.</span></span>
+      <span class="name">Fahad Iqbal</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#work">Work</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#creative">Creative</a></li>
+        <li><a class="nav-link" href="#github">GitHub</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <!-- PLACEHOLDER-03: point this at assets/resume/Fahad-Iqbal-Resume.pdf
+           once the PDF exists, then remove data-pending-link. -->
+      <a class="btn btn-primary btn-sm nav-resume" href="#resume-section" data-pending-link="The resume PDF isn’t in the site yet — PLACEHOLDER-03.">Resume</a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-drawer">
+        <span class="sr-only">Menu</span>
+        <svg class="icon-menu" viewBox="0 0 18 18" fill="none" stroke-width="1.5" aria-hidden="true">
+          <path d="M1 4.5h16M1 9h16M1 13.5h16" stroke-linecap="square"/>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 18 18" fill="none" stroke-width="1.5" aria-hidden="true">
+          <path d="M2.5 2.5l13 13M15.5 2.5l-13 13" stroke-linecap="square"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ===================== MOBILE DRAWER ================================== -->
+<div class="drawer-backdrop" id="drawer-backdrop" data-open="false" tabindex="-1" aria-hidden="true"></div>
+
+<div class="drawer" id="site-drawer" data-open="false" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="drawer-top">
+    <span class="wordmark" aria-hidden="true"><span class="mono">FI<span class="dot">.</span></span></span>
+    <button class="menu-btn" type="button" data-drawer-close>
+      <span class="sr-only">Close menu</span>
+      <svg class="icon-close" viewBox="0 0 18 18" fill="none" stroke-width="1.5" aria-hidden="true">
+        <path d="M2.5 2.5l13 13M15.5 2.5l-13 13" stroke-linecap="square"/>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="drawer-nav" aria-label="All sections">
+    <ol>
+      <li><a class="drawer-link" href="#about"><span class="idx">01</span> About</a></li>
+      <li><a class="drawer-link" href="#capabilities"><span class="idx">02</span> Capabilities</a></li>
+      <li><a class="drawer-link" href="#work"><span class="idx">03</span> Selected Work</a></li>
+      <li><a class="drawer-link" href="#creative"><span class="idx">04</span> Creative Work</a></li>
+      <li><a class="drawer-link" href="#github"><span class="idx">05</span> GitHub</a></li>
+      <li><a class="drawer-link" href="#experience"><span class="idx">06</span> Experience</a></li>
+      <li><a class="drawer-link" href="#education"><span class="idx">07</span> Education</a></li>
+      <li><a class="drawer-link" href="#certifications"><span class="idx">08</span> Certifications</a></li>
+      <li><a class="drawer-link" href="#process"><span class="idx">09</span> My Process</a></li>
+      <li><a class="drawer-link" href="#exploring"><span class="idx">10</span> Currently Exploring</a></li>
+      <li><a class="drawer-link" href="#resume-section"><span class="idx">11</span> Resume</a></li>
+      <li><a class="drawer-link" href="#contact"><span class="idx">12</span> Contact</a></li>
+    </ol>
+  </nav>
+
+  <div class="drawer-foot">
+    <a class="btn btn-primary" href="#resume-section" data-drawer-resume data-pending-link="The resume PDF isn’t in the site yet — PLACEHOLDER-03.">Download resume (PDF)</a>
+    <div class="drawer-socials">
+      <a class="ext" href="https://github.com/fahadiqbal-z" target="_blank" rel="noopener noreferrer">GitHub
+        <svg viewBox="0 0 12 12" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke-linecap="square"/></svg>
+      </a>
+      <!-- PLACEHOLDER-04: LinkedIn. Verify https://www.linkedin.com/in/fahadiqbal-z
+           before launch; if it cannot be verified, delete this link entirely
+           rather than ship a broken one. -->
+      <span class="pending-inline" data-pending>LinkedIn — URL pending</span>
+      <a class="ext" href="mailto:fahadiqbal.1507@gmail.com">Email</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ================= 1 · HERO ================= -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow micro intro-item"><span>Fahad Iqbal</span></p>
+
+          <h1 class="hero-title intro-item" id="hero-title">Engineer who designs<span class="period">.</span></h1>
+
+          <p class="hero-sub intro-item">I build digital systems, then make them feel human.</p>
+
+          <p class="hero-meta micro intro-item">Full-Stack Developer · Cybersecurity · AI Engineering · Creative Technology — Pakistan</p>
+
+          <div class="hero-cta intro-item">
+            <a class="btn btn-primary" href="#work">Selected work</a>
+            <a class="btn btn-secondary" href="#contact">Get in touch</a>
+            <!-- PLACEHOLDER-03: set href="assets/resume/Fahad-Iqbal-Resume.pdf"
+                 and remove data-pending-link + data-pending when the PDF exists. -->
+            <a class="tlink" href="#resume-section" data-pending data-pending-link="The resume PDF isn’t in the site yet — PLACEHOLDER-03.">Download resume</a>
+          </div>
+        </div>
+
+        <aside class="hero-aside intro-item" aria-label="Availability">
+          <p class="micro">At a glance</p>
+          <dl class="facts">
+            <div>
+              <dt>Location</dt>
+              <dd>Pakistan</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>B.S. Cybersecurity student · Independent developer</dd>
+            </div>
+            <div>
+              <dt>Work</dt>
+              <dd>Personal &amp; open-source projects</dd>
+            </div>
+          </dl>
+          <!-- Pure typography is preferred here (§7.2). A single strong visual
+               may be added later from PLACEHOLDER-07 — only if it earns its place.
+               No stock imagery, ever (§8). -->
+        </aside>
+      </div>
+
+      <p class="hero-note reveal">This site is built with plain HTML, CSS, and JavaScript — no frameworks, no trackers, no third-party scripts.</p>
+    </div>
+  </section>
+
+  <!-- ================= 2 · ABOUT ================= -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">01</span> / About</p>
+        <h2 id="about-title">About</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="prose reveal">
+          <p>Full-stack developer and cybersecurity student. I build practical digital systems, not just theory.</p>
+          <p>My work moves between engineering and visual problem-solving — applications and security tools on one side, design, video, VFX, and motion graphics on the other.</p>
+          <p>The approach is project-driven: understand the problem, build the system, test it, refine it, and learn from the process.</p>
+          <p>Right now I&rsquo;m expanding into AI engineering and automation.</p>
+        </div>
+
+        <aside class="reveal" aria-label="Facts">
+          <dl class="facts">
+            <div>
+              <dt>Location</dt>
+              <dd>Pakistan</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>B.S. Cybersecurity, in progress</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Full-Stack, Cybersecurity, AI, Creative Tech</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3 · CAPABILITIES ================= -->
+  <section class="section" id="capabilities" aria-labelledby="capabilities-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">02</span> / Capabilities</p>
+        <h2 id="capabilities-title">Capabilities</h2>
+      </div>
+
+      <!-- Four honest tiers (§4). No percentages, no stars, no "expert" labels. -->
+      <div class="tiers reveal">
+
+        <div class="tier" data-tier="primary">
+          <p class="tier-label"><span class="t">Primary</span> <span class="d">— what I&rsquo;m hired for</span></p>
+          <ul class="tier-items">
+            <li>Cybersecurity</li>
+            <li>Full-Stack Web Development</li>
+            <li>Full-Stack Application Development</li>
+          </ul>
+        </div>
+
+        <div class="tier" data-tier="secondary">
+          <p class="tier-label"><span class="t">Secondary</span> <span class="d">— strong working competence</span></p>
+          <ul class="tier-items">
+            <li>Creative Technology</li>
+            <li>Graphic Design</li>
+            <li>VFX</li>
+            <li>Motion Graphics</li>
+            <li>Video Editing</li>
+            <li>Color Grading</li>
+            <li>Illustration</li>
+          </ul>
+          <p class="tier-note">Tools: Adobe Creative Cloud — Photoshop, Illustrator, Premiere Pro, After Effects, Audition — DaVinci Resolve</p>
+        </div>
+
+        <div class="tier" data-tier="supporting">
+          <p class="tier-label"><span class="t">Supporting</span> <span class="d">— useful complements</span></p>
+          <ul class="tier-items">
+            <li>Python</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Linux</li>
+            <li>Kali Linux</li>
+            <li>Prompt Engineering</li>
+          </ul>
+        </div>
+
+        <div class="tier" data-tier="learning">
+          <p class="tier-label"><span class="t">Currently learning</span></p>
+          <ul class="tier-items">
+            <li>AI Engineering</li>
+            <li>AI Automation</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4 · SELECTED WORK ================= -->
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">03</span> / Work</p>
+        <h2 id="work-title">Selected Work</h2>
+        <p class="intro">Projects across development, security, and creative technology. Flagships include full case studies.</p>
+      </div>
+
+      <div class="work-controls reveal">
+        <div class="chips" role="group" aria-label="Filter projects by tag">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">All <span class="count" aria-hidden="true">1</span></button>
+          <button class="chip" type="button" data-filter="development" aria-pressed="false">Development <span class="count" aria-hidden="true">1</span></button>
+          <button class="chip" type="button" data-filter="cybersecurity" aria-pressed="false">Cybersecurity <span class="count" aria-hidden="true">0</span></button>
+          <button class="chip" type="button" data-filter="ai" aria-pressed="false">AI <span class="count" aria-hidden="true">0</span></button>
+          <button class="chip" type="button" data-filter="creative" aria-pressed="false">Creative <span class="count" aria-hidden="true">0</span></button>
+        </div>
+
+        <!-- Search renders only if there are 8+ published projects (§14, §20.5).
+             One published project today, so JS keeps this out of the a11y tree. -->
+        <div class="work-search" id="work-search" hidden>
+          <label class="sr-only" for="project-search">Search projects</label>
+          <input id="project-search" name="project-search" type="search" placeholder="Search projects" autocomplete="off">
+        </div>
+      </div>
+
+      <p class="work-status" id="work-status" role="status" aria-live="polite"></p>
+
+      <div class="project-grid" id="project-grid">
+
+        <!-- ---------- PROJECT 1 · FLAGSHIP · REAL CONTENT (§14.4) ---------- -->
+        <article class="project-card reveal" data-feature="true" data-published="true" data-status="visible"
+                 data-tags="development" data-name="Portfolio Website"
+                 data-summary="A professional central platform for my technical and creative work.">
+          <div class="project-head">
+            <div class="thumb">
+              <!-- PLACEHOLDER: real screenshot after completion (§14.4
+                   "Screenshots: yes, after completion"). Reserve the 16:10 box
+                   so there is zero layout shift when the image arrives (§23). -->
+              <div class="pending-fill" data-pending>Project screenshot<br>content pending</div>
+            </div>
+            <h3 class="project-title"><a href="case-studies/portfolio-website.html">Portfolio Website</a></h3>
+          </div>
+          <p class="project-summary">A professional central platform for my technical and creative work.</p>
+          <div class="tag-row">
+            <span class="tag">Development</span>
+            <span class="tag">Flagship</span>
+          </div>
+          <p class="project-meta">Status: built — <span class="tbd">[TO BE DOCUMENTED: results]</span></p>
+          <div class="project-links">
+            <a class="tlink" href="case-studies/portfolio-website.html">Case study</a>
+            <!-- PLACEHOLDER-01: demo is this site, at its real domain. -->
+            <span class="pending-inline" data-pending>Live demo — domain pending</span>
+            <!-- PLACEHOLDER: portfolio repository URL under fahadiqbal-z. -->
+            <span class="pending-inline" data-pending>Repo — pending</span>
+          </div>
+        </article>
+
+        <!-- ---------- PROJECTS 2–5 · PLACEHOLDER-06 (§14.5) ----------
+             Empty templates. No flavour copy, no invented facts. Each stays
+             hidden in the launch build until the template below is filled and
+             data-published is set to "true".
+
+             PROJECT TEMPLATE — fill every field; use "[TO BE DOCUMENTED]"
+             rather than inventing:
+               Project name / Domain tag(s) / Problem it solves / Why I built it /
+               My exact contribution / Technologies used / Architecture /
+               Key features (3–6) / Hardest challenge + solution /
+               Results (REAL only) / Demo link / Repository link /
+               Screenshots or video / What I learned / Future improvements /
+               Flagship? (yes → case-study page)
+        -->
+
+        <article class="project-card" data-pending data-published="false" data-status="pending" data-filtered="false"
+                 data-tags="cybersecurity" data-name="Cybersecurity Toolkit" data-summary="">
+          <div class="project-head">
+            <div class="thumb pending"><div class="pending-fill">Content pending</div></div>
+            <h3 class="project-title"><span>Project 2 — Cybersecurity Toolkit</span></h3>
+          </div>
+          <p class="project-summary pending-note">Placeholder slot. <span class="tbd">[CONTENT PENDING — fill the §14.3 template]</span></p>
+          <div class="tag-row"><span class="tag">Cybersecurity</span></div>
+          <p class="project-meta pending-note"><span class="pending-flag">Not for launch</span></p>
+        </article>
+
+        <article class="project-card" data-pending data-published="false" data-status="pending" data-filtered="false"
+                 data-tags="ai" data-name="AI Application / Automation Project" data-summary="">
+          <div class="project-head">
+            <div class="thumb pending"><div class="pending-fill">Content pending</div></div>
+            <h3 class="project-title"><span>Project 3 — AI Application / Automation Project</span></h3>
+          </div>
+          <p class="project-summary pending-note">Placeholder slot. <span class="tbd">[CONTENT PENDING — fill the §14.3 template]</span></p>
+          <div class="tag-row"><span class="tag">AI</span></div>
+          <p class="project-meta pending-note"><span class="pending-flag">Not for launch</span></p>
+        </article>
+
+        <article class="project-card" data-pending data-published="false" data-status="pending" data-filtered="false"
+                 data-tags="development" data-name="Full-Stack Web Application" data-summary="">
+          <div class="project-head">
+            <div class="thumb pending"><div class="pending-fill">Content pending</div></div>
+            <h3 class="project-title"><span>Project 4 — Full-Stack Web Application</span></h3>
+          </div>
+          <p class="project-summary pending-note">Placeholder slot. <span class="tbd">[CONTENT PENDING — fill the §14.3 template]</span></p>
+          <div class="tag-row"><span class="tag">Development</span></div>
+          <p class="project-meta pending-note"><span class="pending-flag">Not for launch</span></p>
+        </article>
+
+        <article class="project-card" data-pending data-published="false" data-status="pending" data-filtered="false"
+                 data-tags="creative" data-name="Creative Technology / VFX Project" data-summary="">
+          <div class="project-head">
+            <div class="thumb pending"><div class="pending-fill">Content pending</div></div>
+            <h3 class="project-title"><span>Project 5 — Creative Technology / VFX Project</span></h3>
+          </div>
+          <p class="project-summary pending-note">Placeholder slot. <span class="tbd">[CONTENT PENDING — fill the §14.3 template]</span></p>
+          <div class="tag-row"><span class="tag">Creative</span></div>
+          <p class="project-meta pending-note"><span class="pending-flag">Not for launch</span></p>
+        </article>
+
+      </div>
+
+      <div class="work-empty" id="work-empty" data-show="false">
+        <p>Nothing matches that filter yet.</p>
+        <button class="btn btn-secondary btn-sm" type="button" id="work-reset">Show all projects</button>
+      </div>
+
+      <!-- The grid accepts up to 10 projects without redesign (§14.1). -->
+    </div>
+  </section>
+
+  <!-- ================= 5 · CREATIVE WORK ================= -->
+  <section class="section bleed creative" id="creative" aria-labelledby="creative-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">04</span> / Creative</p>
+        <h2 id="creative-title">Creative Work</h2>
+        <p class="intro">Design, motion, VFX, and video — the craft behind the engineering.</p>
+      </div>
+
+      <!-- PLACEHOLDER-07: 6–12 real creative works to be supplied.
+           When each item arrives, replace the pending tile with:
+
+           <button class="gallery-item reveal" type="button" data-ratio="4:3"
+                   data-gallery-src="assets/images/creative/FILE.webp"
+                   data-gallery-title="Title" data-gallery-meta="Motion study · After Effects"
+                   data-gallery-alt="Title — motion study made in After Effects"
+                   aria-label="Open Title in the gallery viewer">
+             <span class="gallery-frame">
+               <img src="assets/images/creative/FILE.webp" width="1200" height="900"
+                    alt="Title — motion study made in After Effects"
+                    loading="lazy" decoding="async">
+             </span>
+             <span class="gallery-caption">
+               <span class="t">Title</span><span class="m">Motion study · After Effects</span>
+             </span>
+           </button>
+
+           The lightbox wires itself to any tile carrying data-gallery-src.
+           Mix 4:3 and 1:1 in a deliberate rhythm (§17). Never stock imagery. -->
+      <div class="gallery reveal" data-pending>
+        <div class="gallery-frame pending" data-ratio="4:3"><div class="pending-fill">Content pending<br>creative work 01</div></div>
+        <div class="gallery-frame pending" data-ratio="1:1"><div class="pending-fill">Content pending<br>creative work 02</div></div>
+        <div class="gallery-frame pending" data-ratio="4:3"><div class="pending-fill">Content pending<br>creative work 03</div></div>
+        <div class="gallery-frame pending" data-ratio="1:1"><div class="pending-fill">Content pending<br>creative work 04</div></div>
+        <div class="gallery-frame pending" data-ratio="4:3"><div class="pending-fill">Content pending<br>creative work 05</div></div>
+        <div class="gallery-frame pending" data-ratio="1:1"><div class="pending-fill">Content pending<br>creative work 06</div></div>
+      </div>
+
+      <p class="pending-note reveal gallery-note" data-pending>Gallery assets are PLACEHOLDER-07 — 6 to 12 real works with alt text. This block must be filled or removed before public launch.</p>
+    </div>
+  </section>
+
+  <!-- ================= 6 · GITHUB ================= -->
+  <section class="section" id="github" aria-labelledby="github-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">05</span> / GitHub</p>
+        <h2 id="github-title">GitHub</h2>
+        <p class="intro">Selected repositories. Everything else lives in the open.</p>
+      </div>
+
+      <!-- PLACEHOLDER-05: 3–6 real repos from github.com/fahadiqbal-z.
+           Static and hand-curated — no live API (§27). Per card:
+
+           <article class="repo reveal">
+             <a class="repo-name ext" href="https://github.com/fahadiqbal-z/REPO"
+                target="_blank" rel="noopener noreferrer">REPO
+               <svg viewBox="0 0 12 12" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke-linecap="square"/></svg>
+             </a>
+             <p class="repo-desc">One-line description.</p>
+             <p class="repo-lang"><span class="dot" aria-hidden="true"></span> Language</p>
+           </article>
+
+           Fewer than 3 real repos → the grid simply becomes a short list.
+           Repo names are never invented. -->
+      <div class="repo-list reveal" data-pending>
+        <article class="repo pending-block">
+          <p class="repo-name" aria-hidden="true">Repository 01</p>
+          <p class="repo-desc">Content pending — PLACEHOLDER-05</p>
+          <p class="repo-lang"><span class="dot" aria-hidden="true"></span> Language pending</p>
+        </article>
+        <article class="repo pending-block">
+          <p class="repo-name" aria-hidden="true">Repository 02</p>
+          <p class="repo-desc">Content pending — PLACEHOLDER-05</p>
+          <p class="repo-lang"><span class="dot" aria-hidden="true"></span> Language pending</p>
+        </article>
+        <article class="repo pending-block">
+          <p class="repo-name" aria-hidden="true">Repository 03</p>
+          <p class="repo-desc">Content pending — PLACEHOLDER-05</p>
+          <p class="repo-lang"><span class="dot" aria-hidden="true"></span> Language pending</p>
+        </article>
+      </div>
+
+      <p class="gh-foot reveal">
+        <a class="tlink ext" href="https://github.com/fahadiqbal-z" target="_blank" rel="noopener noreferrer">View GitHub profile
+          <svg viewBox="0 0 12 12" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke-linecap="square"/></svg>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= 7 · EXPERIENCE ================= -->
+  <section class="section" id="experience" aria-labelledby="experience-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">06</span> / Experience</p>
+        <h2 id="experience-title">Experience</h2>
+      </div>
+
+      <!-- Honest framing (§2): independent work, personal and open-source
+           projects. No companies, no fabricated dates, no years of experience. -->
+      <div class="timeline reveal">
+        <article class="tl-entry">
+          <p class="tl-period">Present</p>
+          <div class="tl-body">
+            <h3 class="tl-role">Independent Developer</h3>
+            <p class="tl-meta">Personal &amp; Open-Source Projects</p>
+            <p class="tl-line">Self-directed engineering work across:</p>
+            <ul class="tl-bullets">
+              <li>Full-stack web development</li>
+              <li>Full-stack application development</li>
+              <li>Cybersecurity</li>
+              <li>AI engineering</li>
+              <li>Prompt engineering</li>
+              <li>AI automation</li>
+              <li>Creative technology</li>
+              <li>Graphic design, VFX &amp; video production</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8 · EDUCATION ================= -->
+  <section class="section" id="education" aria-labelledby="education-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">07</span> / Education</p>
+        <h2 id="education-title">Education</h2>
+      </div>
+
+      <div class="timeline reveal">
+        <article class="tl-entry">
+          <p class="tl-period">In progress</p>
+          <div class="tl-body">
+            <h3 class="tl-role">B.S. Cybersecurity</h3>
+            <p class="tl-ach">Cybersecurity entrance examination — 90%</p>
+            <!-- PLACEHOLDER-10: optional line, commented out until the user
+                 confirms public display (§5.8). Uncomment only if desired. -->
+            <!-- Optional, uncomment if desired: Previous university — approx. 3.4 CGPA -->
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9 · CERTIFICATIONS ================= -->
+  <section class="section" id="certifications" aria-labelledby="certifications-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">08</span> / Certifications</p>
+        <h2 id="certifications-title">Certifications</h2>
+      </div>
+
+      <div class="statement reveal">
+        <p>None yet. I&rsquo;m building practical skills through projects and study. Certifications will be listed here when earned.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10 · MY PROCESS ================= -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">09</span> / Process</p>
+        <h2 id="process-title">My Process</h2>
+      </div>
+
+      <ol class="process reveal">
+        <li class="step">
+          <p class="step-num">01</p>
+          <h3 class="step-title">Understand the problem</h3>
+          <p class="step-line">Before anything is built.</p>
+        </li>
+        <li class="step">
+          <p class="step-num">02</p>
+          <h3 class="step-title">Build the system</h3>
+          <p class="step-line">Architecture first, then implementation.</p>
+        </li>
+        <li class="step">
+          <p class="step-num">03</p>
+          <h3 class="step-title">Test it</h3>
+          <p class="step-line">Every assumption gets checked.</p>
+        </li>
+        <li class="step">
+          <p class="step-num">04</p>
+          <h3 class="step-title">Refine it</h3>
+          <p class="step-line">Polish is part of engineering.</p>
+        </li>
+        <li class="step">
+          <p class="step-num">05</p>
+          <h3 class="step-title">Keep learning</h3>
+          <p class="step-line">Every project feeds the next.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= 11 · CURRENTLY EXPLORING ================= -->
+  <section class="section" id="exploring" aria-labelledby="exploring-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">10</span> / Exploring</p>
+        <h2 id="exploring-title">Currently Exploring</h2>
+      </div>
+
+      <div class="panel reveal">
+        <p class="panel-title">AI Engineering &amp; Automation</p>
+        <p>Learning by building. Small experiments, real workflows, honest notes. Nothing here is claimed as finished work.</p>
+        <!-- [TO BE DOCUMENTED: optional specifics — tools, courses, experiments.
+             Left out rather than invented (§5.11).] -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 12 · RESUME ================= -->
+  <section class="section" id="resume-section" aria-labelledby="resume-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">11</span> / Resume</p>
+        <h2 id="resume-title">Resume</h2>
+      </div>
+
+      <div class="resume-panel reveal">
+        <p class="resume-line">One page. The short version.</p>
+        <div class="resume-actions">
+          <!-- PLACEHOLDER-03: assets/resume/Fahad-Iqbal-Resume.pdf does not
+               exist yet, so the button is marked pending and non-navigating
+               (§30: no placeholder URL shipped as clickable). When the PDF is
+               added: set the href, delete data-pending-link and data-pending.
+               The file size appears automatically next to the button (§5.12). -->
+          <a class="btn btn-primary" id="resume-download" href="#resume-section"
+             data-pending data-pending-link="The resume PDF isn’t in the site yet — PLACEHOLDER-03.">Download resume (PDF)</a>
+          <span class="file-size" id="resume-size" hidden></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 13 · CONTACT ================= -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow micro"><span class="num">12</span> / Contact</p>
+        <h2 id="contact-title">Get in touch</h2>
+        <p class="intro">Have a project, a role, or a collaboration in mind? Send a message or email me directly.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- PLACEHOLDER-02: replace FORM_ID with the real Formspree form id.
+             The plain action POST keeps the form working without JS (§28);
+             script.js upgrades it to fetch. The endpoint is the only
+             third-party identifier allowed in the code (§24). -->
+        <form class="form reveal" id="contact-form" action="https://formspree.io/f/FORM_ID" method="POST" novalidate>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required maxlength="80"
+                   aria-describedby="name-error">
+            <p class="field-error" id="name-error" data-show="false"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="254"
+                   aria-describedby="email-error">
+            <p class="field-error" id="email-error" data-show="false"></p>
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject <span class="opt">(optional)</span></label>
+            <input id="subject" name="subject" type="text" autocomplete="off" maxlength="120"
+                   aria-describedby="subject-error">
+            <p class="field-error" id="subject-error" data-show="false"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required maxlength="5000"
+                      aria-describedby="message-error message-hint"></textarea>
+            <p class="field-hint" id="message-hint"><span id="message-count">0 / 5,000 characters</span></p>
+            <p class="field-error" id="message-error" data-show="false"></p>
+          </div>
+
+          <!-- Honeypot (§24, §28): visually hidden, out of tab order, ignored
+               by people, filled by bots. Never referenced in visible copy. -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" id="form-submit">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite" data-state="idle"></p>
+          </div>
+        </form>
+
+        <aside class="contact-side reveal" aria-label="Direct contact">
+          <div class="contact-block">
+            <p class="micro">Direct</p>
+            <a class="contact-email" href="mailto:fahadiqbal.1507@gmail.com">fahadiqbal.1507@gmail.com</a>
+            <div class="resume-actions">
+              <button class="btn btn-secondary btn-sm" type="button" data-copy-email data-label="Copy email">Copy email</button>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <p class="micro">Elsewhere</p>
+            <div class="socials">
+              <a class="ext" href="https://github.com/fahadiqbal-z" target="_blank" rel="noopener noreferrer">GitHub
+                <svg viewBox="0 0 12 12" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke-linecap="square"/></svg>
+              </a>
+              <!-- PLACEHOLDER-04: LinkedIn — verify the URL or omit entirely (§2). -->
+              <span class="pending-inline" data-pending>LinkedIn — URL pending (PLACEHOLDER-04)</span>
+              <a href="mailto:fahadiqbal.1507@gmail.com">Email</a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER (shared chrome) ========================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <p class="name">Fahad Iqbal</p>
+        <p class="tag">Engineer who designs<span class="period-accent">.</span></p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <p class="micro footer-col-label">Sections</p>
+        <ol>
+          <li><a href="#about">About</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#work">Selected Work</a></li>
+          <li><a href="#creative">Creative Work</a></li>
+          <li><a href="#github">GitHub</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#process">My Process</a></li>
+          <li><a href="#exploring">Currently Exploring</a></li>
+          <li><a href="#resume-section">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <div class="footer-links">
+        <p class="micro footer-col-label">Contact</p>
+        <a class="ext" href="https://github.com/fahadiqbal-z" target="_blank" rel="noopener noreferrer">GitHub
+          <svg viewBox="0 0 12 12" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" stroke-linecap="square"/></svg>
+        </a>
+        <!-- PLACEHOLDER-04: LinkedIn link, once verified. -->
+        <span class="pending-inline" data-pending>LinkedIn — pending</span>
+        <a href="mailto:fahadiqbal.1507@gmail.com">fahadiqbal.1507@gmail.com</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> Fahad Iqbal. Built with plain HTML, CSS, and JavaScript.</p>
+      <p>No trackers. No third-party scripts. Zero dependencies.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== LIGHTBOX (§13.10) ============================== -->
+<!-- Present and wired; stays dormant until PLACEHOLDER-07 gallery items carry
+     data-gallery-src. Keyboard: ← → to move, Esc to close. -->
+<dialog class="lightbox" id="gallery-lightbox" aria-label="Creative work viewer" hidden>
+  <figure class="lightbox-figure">
+    <img id="lightbox-img" src="" alt="" width="1200" height="900">
+    <figcaption class="lightbox-bar">
+      <span class="lightbox-cap">
+        <span class="t" id="lightbox-title"></span>
+        <span class="m" id="lightbox-meta"></span>
+      </span>
+      <span class="lightbox-nav">
+        <span class="micro lightbox-counter" id="lightbox-counter"></span>
+        <button class="icon-btn" type="button" id="lightbox-prev" aria-label="Previous work">
+          <svg viewBox="0 0 16 16" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M10 2.5L4.5 8l5.5 5.5" stroke-linecap="square"/></svg>
+        </button>
+        <button class="icon-btn" type="button" id="lightbox-next" aria-label="Next work">
+          <svg viewBox="0 0 16 16" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 2.5L11.5 8 6 13.5" stroke-linecap="square"/></svg>
+        </button>
+        <button class="icon-btn" type="button" id="lightbox-close" aria-label="Close viewer">
+          <svg viewBox="0 0 16 16" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke-linecap="square"/></svg>
+        </button>
+      </span>
+    </figcaption>
+  </figure>
+</dialog>
+
+</body>
+</html>

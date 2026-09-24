@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PLACEHOLDER-01: replace https://YOUR-DOMAIN with the real origin before launch.
+Sitemap: https://YOUR-DOMAIN/sitemap.xml

@@ -1,0 +1,27 @@
+{
+  "name": "Fahad Iqbal",
+  "short_name": "FI",
+  "description": "Fahad Iqbal — full-stack developer and cybersecurity student.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#FAFAF7",
+  "theme_color": "#FAFAF7",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "assets/images/favicon-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "assets/images/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}
